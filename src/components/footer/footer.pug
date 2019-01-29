@@ -1,0 +1,22 @@
+mixin footer()
+	+b('footer').footer
+		.container
+			.d-flex.align-items-center.flex-column
+				+b('nav').menu
+					+e('a')(href="#").link.text-white About
+					+e('a')(href="#").link.text-white US Services
+					+e('a')(href="#").link.text-white Contacts
+					+e('a')(href="#").link.text-white FAQ
+					+e('a')(href="#").link.text-white Insights
+					+e('a')(href="#").link.text-white How does it work?
+				+b.social.mt-4
+					-
+						var social = [
+							'facebook',
+							'google-plus',
+							'youtube',
+							'linkedin'
+						]
+					each item in social
+						+e('a').item(href='#')
+							i.fa(class=`fa-${item}`)

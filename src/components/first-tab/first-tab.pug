@@ -1,0 +1,40 @@
+mixin first-tab()
+  +b.first-tab.tab-pane.active#firstTab
+    .container
+      +b.service-desc
+        +e('h2').title место под сервиса в этом разделе
+        +e.main
+          +e.bg
+            .circle
+            .circle
+            img(src='assets/images/bg.png' alt='')
+          +e.left
+            -
+              var items = [
+              'Telemarketing operator',
+              'Telecommunication manager service',
+              'Marketing research',
+              'Data entry operator',
+              'Virtual Receptionist',
+              'Marketing research'
+              ]
+            each item in items
+              +e.left-item
+                img(src='assets/images/download.png')
+                span= item
+          +e.right
+            img(src='assets/images/headset.png' alt='')
+            +e.right-text
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          +e('img').girl(src='assets/images/girl.png' alt='')
+        .d-flex.flex-column.align-items-center
+          +e.desc
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          +e('img').img(src='assets/images/icon-people.png' alt='')
+      +b.service-videos
+        +e.items
+          - for (var i = 0; i < 3; i++)
+            +e.item
+              <iframe src="https://www.youtube.com/embed/O_8V9hOX5Qw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        +e.desc
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint

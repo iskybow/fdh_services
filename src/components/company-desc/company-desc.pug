@@ -1,0 +1,30 @@
+mixin company-desc()
+  +b('section').company-desc
+    +b.container
+      +b.row
+        +b.col
+          +b('p').company-desc__text.text-center Our company provides a range of an in-house call center services. It may become reliable outsourcing support for your business. No matter how long you are building your own industry, a year, 2 years or 3 weeks…We know exactly in what way our team can help you at your current stage. Our professional team can give you a helpful hand in the following areas, including but not limited to hose below.
+
+      +b.row.justify-content-center
+        +b.col-10
+          +b.services.nav.nav-tabs
+            +b('a')(href='#firstTab' data-toggle="tab").service.d-flex.flex-column.align-items-center.text-center.nav-link.active
+              +e('span').count.font-weight-bold.align-self-end 01
+              +e('img')(src="assets/images/support.png")
+              +e('h4').title.font-weight-bold Call center
+              +e('p').describe Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+
+            +b('a')(href='#secondTab' data-toggle="tab").service.d-flex.flex-column.align-items-center.text-center.nav-link
+              +e('span').count.font-weight-bold.align-self-end 02
+              +e('img')(src="assets/images/network.png")
+              +e('h4').title.font-weight-bold Business processes outsourcing
+              +e('p').describe Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+
+            +b('a')(href='#thirdTab' data-toggle="tab").service.d-flex.flex-column.align-items-center.text-center.nav-link
+              +e('span').count.font-weight-bold.align-self-end 03
+              +e('img')(src="assets/images/support_.png")
+              +e('h4').title.font-weight-bold Business process as Service
+              +e('p').describe Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+
+          +b.row.justify-content-center
+            +b('a')(href="/").btn.text-uppercase.font-weight-bold.try-service Try now

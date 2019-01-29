@@ -1,0 +1,99 @@
+.service-desc
+  padding: 30px 0 0
+  background-color: #ebf9fa
+  &__title
+    width: 380px
+    margin: 0
+    font-size: 32px
+    text-transform: uppercase
+    font-weight: 800
+    @media (max-width: 768px)
+      width: auto
+      text-align: center
+  &__main
+    position: relative
+    display: flex
+    align-items: flex-start
+    margin-top: -75px
+    @media (max-width: 768px)
+      flex-direction: column
+      align-items: center
+  &__left,
+  &__right
+    position: relative
+    z-index: 1
+    width: 50%
+    @media (max-width: 768px)
+      width: 100%
+  &__left
+    margin-top: 130px
+    padding: 35px 45px
+    background-color: #eeeeee
+    @media (max-width: 768px)
+      margin-top: 100px
+      padding: 35px 20px
+    &-item
+      display: flex
+      align-items: center
+      padding: 11px 0
+      font-size: 19px
+      font-weight: 700
+      img
+        margin-right: 33px
+  &__right
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 10px 15px 60px
+    background-color: #ffffff
+    @media (max-width: 993px)
+      margin-top: 130px
+    @media (max-width: 768px)
+      margin-top: 30px
+    &-text
+      width: 385px
+      margin-top: 35px
+      letter-spacing: 0.9px
+      font-size: 18px
+      font-weight: 700
+      text-align: center
+      @media (max-width: 993px)
+        width: auto
+  &__bg
+    position: absolute
+    bottom: -20px
+    left: 33%
+    @media (max-width: 993px)
+      display: none
+    img
+      position: relative
+    .circle
+      &:first-of-type
+        left: 55px
+        top: -27px
+      &:last-of-type
+        bottom: -23px
+        right: 50px
+  &__girl
+    position: absolute
+    z-index: 2
+    left: 50%
+    bottom: 0
+    transform: translateX(-50%)
+    @media (max-width: 993px)
+      display: none
+  &__desc
+    margin-top: 70px
+    text-align: center
+    font-size: 19px
+  &__img
+    margin-bottom: -39px
+    @media (max-width: 768px)
+      width: 100%
+
+.circle
+  position: absolute
+  width: 47px
+  height: 47px
+  border: 13px solid #fdd14e
+  border-radius: 50%

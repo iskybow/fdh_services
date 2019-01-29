@@ -1,0 +1,19 @@
+extends ../components/layout-default/layout-default
+include ../components/breadcrumbs/breadcrumbs
+include ../components/page-desc/page-desc
+include ../components/company-desc/company-desc
+include ../components/first-tab/first-tab
+include ../components/second-tab/second-tab
+include ../components/third-tab/third-tab
+
+block head
+  - var pageTitle = 'Index Page';
+
+block content
+  +breadcrumbs()
+  +page-desc()
+  +company-desc()
+  .tabs.tab-content
+    +first-tab()
+    +second-tab()
+    +third-tab()
