@@ -1,0 +1,12 @@
+extends ../components/layout-default/layout-default
+include ../components/news/breadcrumbs-news/breadcrumbs-news
+include ../components/news/page-desc-news/page-desc-news
+include ../components/news/content-news/content-news
+
+block head
+  - var pageTitle = 'Index Page';
+
+block content
+  +breadcrumbs-news()
+  +page-desc-news()
+  +content-news()

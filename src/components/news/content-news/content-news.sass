@@ -1,0 +1,106 @@
+.content-news
+  display: block
+  margin-top: 40px
+
+  & .container
+    display: flex
+    flex-wrap: wrap
+    align-items: flex-start
+
+  &__left
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    width: calc(100% - 400px)
+    @media (max-width:  992px)
+      order: 1
+      width: 100%
+
+  &__head
+    margin: 0
+    font-family: 'Muller', sans-serif
+    font-weight: 800
+    font-size: 20px
+    color: #000203
+
+  &__text
+    margin: 30px 0 0
+    font-family: 'Muller', sans-serif
+    font-weight: 500
+    font-size: 20px
+    color: #000203
+
+  &__image
+    width: 100%
+    height: auto
+    margin: 20px 0 -15px
+
+    &_right
+      margin-bottom: 0
+
+    &_big
+      width: auto
+      @media (max-width:  768px)
+        width: 100%
+
+  &__right
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    width: 390px
+    margin: -60px -25px 0 auto
+    padding: 40px 26px 0
+    background-color: #ffffff
+    box-sizing: border-box
+    @media (max-width:  992px)
+      order: 3
+      width: 100%
+      margin: 0 0 30px
+
+  &__right-head
+    margin: 0 auto 10px
+    font-family: 'Muller', sans-serif
+    font-weight: 800
+    font-size: 32px
+    color: #000000
+
+  &__small-head
+    margin: 25px 0 0
+    font-family: 'Muller', sans-serif
+    font-weight: 700
+    font-size: 21px
+    color: #000000
+    letter-spacing: 0.85px
+
+  &__small-text
+    margin: 23px 0 0
+    font-family: 'Muller', sans-serif
+    font-weight: 400
+    font-size: 14px
+    color: #000000
+
+  &__line
+    width: 90%
+    height: 2px
+    margin: 25px auto 0
+    background-color: #282828
+    border: none
+
+  &__btn
+    position: relative
+    top: 7px
+    margin: 55px auto 0
+
+  &__bottom
+    margin: 55px 45px 65px
+    font-family: 'Muller', sans-serif
+    font-weight: 400
+    font-size: 19px
+    color: #000000
+    text-align: center
+    @media (max-width:  992px)
+      order: 2
+      margin: 30px 45px
+    @media (max-width:  475px)
+      margin: 30px 0
+      text-align: left

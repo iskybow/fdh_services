@@ -2,14 +2,17 @@ mixin header()
   +b('header').header
     +b.container
       .d-flex.align-items-center.justify-content-between.flex-wrap
-         +b.logo
-           +e('a')(href="/")
-             +e('img')(src="assets/images/logo.png" alt="Frontdeskhelpers").img
-
-         +b('nav').menu
-           +e('a')(href="#").link.text-white About
-           +e('a')(href="#").link.text-white US Services
-           +e('a')(href="#").link.text-white Contacts
-           +e('a')(href="#").link.text-white FAQ
-           +e('a')(href="#").link.text-white Insights
-           +e('a')(href="#").link.text-white How does it work?
+        +b.logo
+          +e('a')(href="/")
+            +e('img')(src="assets/images/logo.png" alt="Frontdeskhelpers").img
+        +b.menu-btn.jsMobileMenu
+          span
+          span
+          span
+        +b('nav').menu.mobile-menu.jsMenu
+          +e('a')(href="#").link.text-white About
+          +e('a')(href="#").link.text-white US Services
+          +e('a')(href="#").link.text-white Contacts
+          +e('a')(href="#").link.text-white FAQ
+          +e('a')(href="#").link.text-white Insights
+          +e('a')(href="#").link.text-white How does it work?
