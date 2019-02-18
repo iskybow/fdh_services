@@ -1,0 +1,53 @@
+mixin content-form()
+  +b('section').content-form
+    .container
+      +e.left
+        +e('h2').head Free Client Consultation Form
+        +e('p').text We’ll provide a free consultation, in person or on the phone, give all the necessary information on
+          | Business Process Outsourcing (BPO). We are ready to answer the questions of the companies from the different
+          | industries and are involved in any kind of activity. We offer an opportunity to hire a professional remote
+          | employee in the direction you need from $ 7 / hour. It is your choice! Our operators speak English, Spanish,
+          | Russian and other languages, so you can let us know what department you prefer to speak as well as the day
+          | and time that fits better for you to have a consultation and make your communication with us more comfortable.
+          | Contact us today and let us know how we can get back to you. We will do it within 24 hours to discuss your
+          | business needs.
+        +e('p').text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+          | labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          | aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          | dolore eu fugiat nulla pariatur. Excepteur
+        +e('p').contacts-head Contact us
+        +e('a')(href='tel:8442226368').phone-mail
+          +e('img')(src='assets/images/telephone.svg' alt='')
+          | (844)-222-6368
+        +e('a')(href='mailto:sales@frontdeskhelpers.com').phone-mail
+          +e('img')(src='assets/images/mail.svg' alt='')
+          | sales@frontdeskhelpers.com
+      +e.right
+        +e('img')(src='assets/images/bg_dots.png' alt='').dots1
+        +e('img')(src='assets/images/bg_dots.png' alt='').dots2
+        +e.bg-yellow
+        +e('h2').form-head I am looking to:
+        +e('p').form-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo
+        +e('form').form
+          +e('label').input
+            | Name*
+            +e('input')(type='text' placeholder='M-Elgendy')
+          +e('label').input
+            | Phone number to contact *
+            +e('input')(type='tel')
+          +e('label').input
+            | Email*
+            +e('input')(type='mail')
+          +b('label').radio
+            +e('input')(type='radio' name='form' checked)
+            +e('div').text Hire remote employees
+          +b('label').radio_mb
+            +e('input')(type='radio' name='form')
+            +e('div').text Create my own call center
+          +e('label').input
+            | I am interested in:
+            +e('input')(type='text')
+          +e('label').input
+            | Details
+            +e('input')(type='text')
+          +e('button').btn.button-main(type="button") try now

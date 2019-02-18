@@ -1,0 +1,21 @@
+mixin footer-form()
+  +b.footer-form
+    .container
+      .d-flex.align-items-center.flex-column
+        +b.social
+          -
+            var social = [
+            'facebook',
+            'google-plus',
+            'youtube',
+            'linkedin'
+            ]
+          each item in social
+            +e('a').item(href='#')
+              i.fa(class=`fa-${item}`)
+        +b('nav').menu.f-menu-form
+          +e('a')(href="#").link.text-white Home
+          +e('a')(href="#").link.text-white Contacts
+          +e('a')(href="#").link.text-white Here Now
+          +e('a')(href="#").link.text-white Privacy Policy
+          +e('a')(href="#").link.text-white Terms of Service

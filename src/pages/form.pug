@@ -1,0 +1,10 @@
+extends ../components/layout-default/layout-default-form
+include ../components/form/breadcrumbs-form/breadcrumbs-form
+include ../components/form/content-form/content-form
+
+block head
+  - var pageTitle = 'Form Page';
+
+block content
+  +breadcrumbs-form()
+  +content-form()
